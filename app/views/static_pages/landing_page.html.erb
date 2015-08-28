@@ -1,5 +1,11 @@
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>
+
+<%= link_to "Edit this product", edit_product_path(3) %>
+
+<%= link_to "Product details", @product %>
+
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
