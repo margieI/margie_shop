@@ -1,5 +1,6 @@
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>
+<% @products.each do |product| %>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
@@ -9,8 +10,7 @@
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-      	<% @products.each do |product| %>
-        <div id="carousel-top-position">
+      	<div id="carousel-top-position">
           <div class="header">
             <h1 id="topindex"><strong>MARGARITA ITAJ</strong></h1>
           </div>
