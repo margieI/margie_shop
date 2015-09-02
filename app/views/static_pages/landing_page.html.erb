@@ -1,55 +1,29 @@
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>
 
-<%= link_to "Edit this product", edit_product_path(3) %>
-
-<%= link_to "Product details", @product %>
-
-
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example" data-slide-to="1"></li>
-        <li data-target="#carousel-example" data-slide-to="2"></li>
-        <li data-target="#carousel-example" data-slide-to="3"></li>
+        <% @products.each_with_index do |product, index| %>
+          <li data-target="#carousel-example" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : ''%>"></li>
+        <% end %>
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-         <% @products.each do |product| %>
-      	<div id="carousel-top-position">
-          <div class="header">
-            <h1 id="topindex"><strong>MARGARITA ITAJ</strong></h1>
-          </div>
-        </div> 
-        <div class="item<%= "active" if product == @products.first %>">
-        	<%= image_tag(product.image_url) %>
-          <img src="img/home2.jpg" alt="Portugal">
-          <div class="carousel-caption">
-          	<%= product.name %>
-           <p></p>
-            <h3></h3>
-          </div>
-        </div>
-         <div class="item">
-         	<%= image_tag(product.image_url) %>
-          <img src="img/city.jpg" alt="Portugal">
-          <div class="carousel-caption">
-          	<%= product.name %>
-            <p></p>
-            <h3 ></h3>
-          </div>
-        </div>
-        <div class="item">
-        	<%= image_tag(product.image_url) %>
-          <img src="img/city1.jpg" alt="Portugal">
-          <div class="carousel-caption">
-          	<%= product.name %>
-            <p></p>
-            <h3></h3>
-          </div>
-        </div>
-        <% end %>
-    </div> <!-- carousel inner -->
+
+          <% @products.each_with_index do |product, index| %>
+            <div class="item <%= index == 0 ? 'active' : '' %>">
+              
+              <%= image_tag product.image_url %>
+              <div class="carousel-caption">
+                <%= product.name %>
+              </div>
+
+            </div>
+
+          <% end %>
+
+      </div> <!-- carousel inner -->
+
       <!-- Left and right Controls-------- -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
