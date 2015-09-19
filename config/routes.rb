@@ -8,12 +8,13 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
 
+  get 'static_pages/work'
+
+  get 'static_pages/faqs'
+
   get 'static_pages/landing_page'
 
-  
-
-
-
+  post 'static_pages/thank_you'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

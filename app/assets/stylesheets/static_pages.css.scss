@@ -2,3 +2,242 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+.anchor {
+  padding-top: 120px;
+  width: 100%;
+  background-color: rgba(13,13,12,0.8);
+}
+.search {
+  margin-top:13px;
+  text-decoration: none;    
+  float: left;
+  }
+#nav { 
+  text-align:center;
+}
+#nav ul li.nav-list-item { 
+  float: none;
+}
+#nav ul {
+  text-align:center;
+}
+#nav ul li { 
+  text-align:center; 
+  display:inline; 
+}
+#nav li a { display: inline; }
+
+  /****************/
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+p{
+  font-size: 13.8px;
+}
+.header{
+ text-align: center;
+ font-family: 'Wallpoet', cursive;
+ color: #fff; 
+}
+#carousel-top-position {
+  position: absolute;
+  z-index: 1000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 26%;
+}
+#topindex { 
+  /*margin-top: 100px;  */
+  color: #fff;
+  font-size: 45px;
+}
+/********about****style******//******about**style*****************************************/
+
+.gridheader {
+  padding: 0.872%;
+  background-color: rgba(13,13,12,0.8);
+  border: rgba(246,249,235,0.8);
+}
+.jumbotron {
+  background-color: rgba(3,108,124,1);
+  
+}
+.transbox{
+  margin: 100px 20px 20px 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity:0.6;
+  }
+.transbox p{
+  margin: 3%;
+  font-weight: bold;
+  color: #000000;
+}
+#imageabout{
+  width: 80%;  
+}
+
+/********end**about**style******//*****************************************************/
+
+/**********work****style******//*****************************************************/
+/*#work{
+  background-color: rgba(250,254,230,0.8);
+}*/
+ #youtube{
+  margin-top: 100px;
+  margin-left: 500px;
+}
+
+.image {
+    box-sizing:border-box;
+    border:2px solid #fff;
+    width:200px;
+    height:200px;
+    margin:5px;
+    display:inline-block;
+    position:relative;
+}
+
+.info {
+    display:inline-block;
+    color:#fff;
+    font-family:Futura;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:0.5em;
+    line-height:1.6;
+    position:absolute;
+    top:15%;
+    left:22%;
+}
+
+.proj-title {
+    font-weight:100;
+}
+
+ /*******end***work****style******/
+ /**********faq****style***********************************************/
+.learn-more { 
+  text-align: left;
+  float: left;
+  margin-left: 37px;
+  margin-top: 15px;
+}
+.row{
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+table{
+  margin-top: 30px;
+  width: 100%;
+}
+
+.my-row {
+  border-spacing: 1px;
+  text-align: right;
+}
+.panel-group{
+  width: 100%;
+}
+.btn-info  {
+  float: right;
+  padding: 15px;
+}
+.modal-body {
+  height: 500px;
+}
+#modalframe {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+#answer{
+  color: black;
+}
+/*********contact*****style******//**************************/
+/*#contact-top-box{
+  margin-left: -396px;
+  margin-right: -364px;
+}*/
+.col-lg-4 {
+  width: 35%;
+}
+.col-xs-4{
+  float: left;
+  padding-top: 25px;
+  margin-bottom: 40px;
+  padding-left: 5px; 
+ }
+.col-md-8{
+  padding-top: 100px;
+  float: right;
+}
+#map-canvas{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transform:translatez(0px);
+  background-color: grb(229,227,223);
+  float: left;
+}
+
+/*******end***contact****style******/
+
+/**------------footer--------------**/
+#gridfooter {
+  width: 100%;
+  margin-bottom: 0;
+}
+#gridfooter {
+  padding: 1%;
+  background-color: #1E90FF;    
+  font-size: 11px;
+}/*#f1f1f1*/
+#letter{
+  text-align: center;
+}
+.footeright{
+  text-align: right;  
+ }
+.footer{
+  text-align: left;
+}
+@media only screen and (max-width: 600px) {
+#index{
+  padding-left: 0;
+  padding-right: 0;
+}
+#carousel-top-header {
+  margin-left: 205px;
+}
+#topindex { 
+  margin-top: 175px;
+  font-size: 17px;
+}
+ /********about****style******//******about**style**************************************/  
+#imageabout{
+  width: 100%;  
+}
+    
+/********end**about**style******//*****************************************************/
+
+.title h1 {
+  font-weight: 17.2;
+  margin-top: 12.5px;
+  margin-bottom: 27.5px;
+}
+#divrow{
+  max-width: 100%;
+  height: auto;
+  }
+
+}
+      
+
+ 
