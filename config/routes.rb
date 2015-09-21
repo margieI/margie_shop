@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users
+
   resources :products
   resources :orders, only: [:index, :show, :new, :create]
 
@@ -20,6 +23,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#landing_page' # http://myshop.com/    symbol for root: "/"
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
