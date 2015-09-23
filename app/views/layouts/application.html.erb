@@ -18,6 +18,7 @@
 <body>  	    
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">   
     <h2 class="header" id="title-logo">WATER SOUL</h2>
+
     <div class="nav container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -66,7 +67,12 @@
 <!--<h1>Welcome in the biggest online travel agency</h1>-->
 <p class ="notice"><%= notice %></p>
 <p class ="alert"><%= alert %></p>
-<%= yield %>
 
+
+      <ul class="hmenu">
+        <%= render 'layouts/registration_items' %>
+        <%= render 'layouts/login_items' %>
+      </ul>
+      <%= yield %>
 </body>
 </html>

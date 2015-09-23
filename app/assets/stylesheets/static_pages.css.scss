@@ -5,9 +5,9 @@
 
 
 .anchor {
-  padding-top: 125px;
+  padding-top: 120px;
   width: 100%;
-  background-color: rgba(13,13,12,0.8);
+  background-color: rgb(230, 230, 230);
 }
 .search {
   margin-top:13px;
@@ -16,6 +16,7 @@
   }
 #nav { 
   text-align:center;
+  background-color: rgb(230, 230, 230);
 }
 #nav ul li.nav-list-item { 
   float: none;
@@ -26,8 +27,13 @@
 #nav ul li { 
   text-align:center; 
   display:inline; 
+  background-color: rgb(230, 230, 230);
 }
-#nav li a { display: inline; }
+#nav li a { display: inline; 
+background-color: rgb(230, 230, 230);
+}
+
+
 
   /****************/
 .container-fluid {
