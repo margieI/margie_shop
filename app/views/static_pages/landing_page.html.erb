@@ -1,7 +1,13 @@
-<h2 class="header" id="title-logo">WAVE SOUL</h2>
-<%= @featured_product.name %>  
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  <!-- Indicators -->
+<!--<%= @featured_product.name %>-->  
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-top-position">
+          <div class="header">
+            <h1 id="topindex"><strong>Welcome in the biggest online travel agency</strong></h1>
+          </div>
+        </div> 
+  <!-- Indicators -->
       <ol class="carousel-indicators">
         <% @products.each_with_index do |product, index| %>
           <li data-target="#carousel-example" data-slide-to="<%= index %>" class="<%= index == 0 ? 'active' : ''%>"></li>
@@ -33,5 +39,6 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      </div> <!-- carousel div -->   
+      </div> <!-- carousel div -->  
+      </div> 
        

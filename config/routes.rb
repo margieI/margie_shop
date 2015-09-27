@@ -5,17 +5,19 @@ Rails.application.routes.draw do
   resources :products
   resources :orders, only: [:index, :show, :new, :create]
 
+  get 'static_pages/index'
+
+  get 'static_pages/landing_page'
+
   get 'static_pages/about'
+  
+  get 'static_pages/destinations'
+
+  get 'static_pages/special_offers'
 
   get 'static_pages/contact'
 
-  get 'static_pages/index'
-
-  get 'static_pages/work'
-
-  get 'static_pages/faqs'
-
-  get 'static_pages/landing_page'
+  
 
   post 'static_pages/thank_you'
   # The priority is based upon order of creation: first created -> highest priority.
