@@ -1,12 +1,21 @@
 class UsersController < ApplicationController
+
+  before_action :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
   load_and_authorize_resource
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-  end
+     #if user is not admin, cannot access index page
+    if current_user.admin == false
+      flash[:notice] = "You are not authorized to access this page."
+        redirect_to(static_pages_index_path)
+      else
+        @users = User.all
+    end
+    end
 
   # GET /users/1
   # GET /users/1.json
@@ -68,10 +77,10 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+   
+end
+
+ # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:first_name, :last_name)
     end
-
-
-end
