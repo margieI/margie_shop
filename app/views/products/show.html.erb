@@ -1,5 +1,6 @@
 
 <div class="container anchor" id="process"></div>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -22,10 +23,12 @@
   <%= @product.colour %>
 </p>
 
+
+
+ <%= render partial: 'new_comment' %>
+ <%= render 'list_comments' %>
+
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-
- <%= render 'product/new_comment' %>
- <%= render 'product/list_comments' %>
-
 
