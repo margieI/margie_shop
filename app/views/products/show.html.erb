@@ -25,8 +25,8 @@
 
 <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
- <%= render partial: 'new_comment' %>
- <%= render 'list_comments' %>
+ <%= render partial: 'comments/new_comment' %>
+ <%= render 'comments/list_comments' %>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

@@ -3,3 +3,5 @@ class AddAdminFlagToUsers < ActiveRecord::Migration
   	add_column :users, :admin, :boolean, default: false, null: false
   end
 end
+
+
