@@ -33,6 +33,12 @@ group :production do
   gem 'pg'
 end
 
+##rspec-rails to the :test and :development groups in the Gemfile
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+
+  gem 'sqlite3'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -48,6 +54,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-group :development, :test do
-  gem 'sqlite3'
-end
+
+
