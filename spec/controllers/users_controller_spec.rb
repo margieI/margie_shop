@@ -7,8 +7,7 @@ describe UsersController, :type => :controller do
   end
 
   describe "GET #show" do
-     context "User is logged in" do
-
+      context "User is logged in" do
         before do
           sign_in @user
         end
@@ -19,14 +18,14 @@ describe UsersController, :type => :controller do
           expect(assigns(:user)).to eq @user
         end 
      
-     end
+      end
 
-     context "No user is logged in" do
-       it "redirects to login" do 
-         get :show, id: @user.id
-         expect(response).to redirect_to(new_user_session_path)
-       end
-     end
+      context "No user is logged in" do
+        it "redirects to login" do 
+          get :show, id: @user.id
+          expect(response).to redirect_to(new_user_session_path)
+        end
+      end
   end
 
 end
