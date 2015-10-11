@@ -28,7 +28,13 @@ gem 'cancancan'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 
-gem "factory_girl_rails", "~> 4.0"
+gem 'factory_girl_rails', '~> 4.0'
+
+
+# (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
+gem 'spork', '~> 1.0rc'
+
+
 
 group :production do
   gem 'rails_12factor'
@@ -38,6 +44,15 @@ end
 ##rspec-rails to the :test and :development groups in the Gemfile
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+
+   gem 'guard'
+
+  gem 'guard-rspec', require: false
+
+  gem "spork-rails"
+
+  gem 'guard-spork'
+  
   gem 'sqlite3'
 end
 
