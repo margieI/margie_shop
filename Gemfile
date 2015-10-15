@@ -53,6 +53,8 @@ group :development, :test do
   gem 'guard-spork'
   
   gem 'sqlite3'
+
+  gem 'quiet_assets'
 end
 
 

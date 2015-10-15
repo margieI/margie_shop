@@ -25,9 +25,9 @@
 
 <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
-<%= form_tag "/payments/create" do %>
+<%= form_tag "/payments" do %>
   <%= render partial: "shared/stripe_checkout_button" %>
-  <%= hidden_field :product_id, @product.id %>
+  <%= hidden_field_tag :product_id, @product.id %>
 <% end %>
 
  <%= render partial: 'comments/new_comment' %>
