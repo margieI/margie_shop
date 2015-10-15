@@ -38,6 +38,10 @@ group :production do
   gem 'pg'
 end
 
+group :development do
+  gem 'byebug'
+end
+
 ##rspec-rails to the :test and :development groups in the Gemfile
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
@@ -68,7 +72,7 @@ end
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
