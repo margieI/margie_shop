@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+#=* ruby-1.9.3-p327 [ i686 ]
+   ruby "2.2" #head [ i686 ]
+
+# => - current
+# =* - current && default
+#  * - default
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -33,14 +39,16 @@ gem 'spork', '~> 1.0rc'
 
 gem 'stripe'
 
+
+
 group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
 
-group :development do
-  gem 'byebug'
-end
+#group :development do
+ # gem 'byebug'
+#end
 
 ##rspec-rails to the :test and :development groups in the Gemfile
 group :development, :test do
@@ -72,10 +80,11 @@ end
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-#gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
+gem 'brakeman', :require => false
 
 
