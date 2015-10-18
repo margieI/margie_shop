@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-#=* ruby-1.9.3-p327 [ i686 ]
-   ruby "2.2" #head [ i686 ]
+ruby "2.2.4"
 
 # => - current
 # =* - current && default
@@ -46,9 +45,9 @@ group :production do
   gem 'pg'
 end
 
-#group :development do
- # gem 'byebug'
-#end
+group :development do
+  gem 'byebug'
+end
 
 ##rspec-rails to the :test and :development groups in the Gemfile
 group :development, :test do
@@ -67,6 +66,9 @@ group :development, :test do
   gem 'sqlite3'
 
   gem 'quiet_assets'
+
+  gem 'brakeman', :require => false
+
 end
 
 
@@ -80,11 +82,11 @@ end
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-gem 'brakeman', :require => false
+
 
 
