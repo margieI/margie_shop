@@ -13,16 +13,27 @@
       <div class="col-md-12">
         <!--iframe  id="youtube" width="580" height="335" src="https://www.youtube.com/embed/Pwrwf_8H25Y" frameborder="0" allowfullscreen></iframe-->
       </div> 
-   
+   <span id="result">&nbsp;</span>
+<div id='demo' style="background-color:blue;"></div>
+<div id='demo' style="background-color:rgb(15,99,30);"></div>
+<div id='demo' style="background-color:#123456;"></div>
+<div id='demo' style="background-color:#f11;"></div>
+ 
+
     <div class="col-md-4">  
       <div class="image" id="diving00"> 
       <p></p>    
         <%= image_tag "dest05.jpeg", alt: "finger cymbals", class: "product" %>
         </div> 
-    <div class="col-md-4"> 
-    <p></p>     
-        <%= image_tag "dest02.jpg", alt: "finger cymbals", class: "product" %>  
-      </div>
+    
         </div>
 
-</div><!--END DESTINATION--->
+</div><!--END DESTINATION---->
+
+<script>
+$( "div" ).click(function() {
+  var color = $( this ).css( "background-color" );
+  $( "#result" ).html( "That div is <span style='color:" +
+    color + ";'>" + color + "</span>." );
+});
+</script>

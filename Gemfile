@@ -38,6 +38,7 @@ gem 'spork', '~> 1.0rc'
 
 gem 'stripe'
 
+gem 'chosen-rails'
 
 
 group :production do
