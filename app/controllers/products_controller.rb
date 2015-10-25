@@ -5,12 +5,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    respondto [:json, :html]
     if params[:q]
       search_term = params[:q]
       @products = Product.where("name LIKE ?", "%#{search_term}%")
     else
       @products = Product.all
     end
+    respond_with @products
   end
 
   # GET /products/1

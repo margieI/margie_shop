@@ -6,8 +6,8 @@ Rails.application.routes.draw do
     resources :comments
   end
  
-  resources :orders, only: [:index, :show, :new, :create]
-
+  resources :orders, only: [:index, :show, :new, :create, :destroy]
+  
   resources :payments
 
   get 'static_pages/index'

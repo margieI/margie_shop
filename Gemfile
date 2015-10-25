@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.4"
+
 
 # => - current
 # =* - current && default
@@ -39,6 +39,8 @@ gem 'spork', '~> 1.0rc'
 gem 'stripe'
 
 gem 'chosen-rails'
+
+gem 'angularjs-rails'
 
 
 group :production do
