@@ -12,12 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require chosen-prototype
 
 //= require chosen-jquery
 //= require scaffold
 
 //= require turbolinks
 //= require_tree .
-//= require angular
-//= require angular-resource

@@ -66,6 +66,9 @@
               <li>
                 <%= link_to "CONTACT", static_pages_contact_path %><!--<a href="#contact">CONTACT</a>-->
               </li>
+              <li>
+              <%= select_tag :language, options_for_select([["English"], ["French"], ["Greek"]]) %>
+            </li>
               </ul>                          
           </div><!--end col-xs-12-->          
         </div><!--end row-->
