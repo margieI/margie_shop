@@ -42,6 +42,11 @@ gem 'chosen-rails'
 
 gem 'angularjs-rails'
 
+gem 'actionpack-action_caching'
+
+gem 'actionpack-page_caching'
+
+
 
 group :production do
   gem 'rails_12factor'
