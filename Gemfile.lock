@@ -70,6 +70,7 @@ GEM
       sass (~> 3.2.19)
     compass-rails (2.0.0)
       compass (>= 0.12.2)
+    dalli (2.7.4)
     devise (3.5.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -277,6 +278,7 @@ DEPENDENCIES
   cancancan
   chosen-rails
   coffee-rails (~> 4.0.0)
+  dalli
   devise
   factory_girl_rails (~> 4.0)
   guard

@@ -46,6 +46,8 @@ gem 'actionpack-action_caching'
 
 gem 'actionpack-page_caching'
 
+gem 'dalli'
+
 
 
 group :production do

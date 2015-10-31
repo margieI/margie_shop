@@ -22,6 +22,12 @@ class ProductsController < ApplicationController
   end
 end
 
+
+Rails.cache.write("navbar-user-#{current_user.id}", object)
+
+Rails.cache.read("navbar-user-#{current_user.id}")
+
+
   # GET /products
   # GET /products.json
   def index
