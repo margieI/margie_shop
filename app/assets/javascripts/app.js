@@ -1,5 +1,5 @@
 
-/*
+
 var app = angular.module('shop', ['ngResource']);
 
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
@@ -37,4 +37,4 @@ app.factory('models', ['$resource', function($resource){
   products: products_model
 };
 return x;
-}]);*/
+}]);

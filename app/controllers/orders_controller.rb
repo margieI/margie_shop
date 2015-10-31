@@ -24,6 +24,12 @@ class OrdersController < ApplicationController
         respond_with Order.destroy(params[:id])
     end
 
+    protected
+
+    def json_request?
+       request.format.json?
+    end
+
     private
 
   def order_params
