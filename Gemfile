@@ -48,6 +48,10 @@ gem 'actionpack-page_caching'
 
 gem 'dalli'
 
+gem 'redis-rails' # Will install several other redis-* gems
+
+
+
 
 
 group :production do
