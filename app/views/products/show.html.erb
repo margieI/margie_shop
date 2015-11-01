@@ -1,3 +1,5 @@
+<h3>Number of Product Shows: <%= $redis.incr("number-of-product-shows-#{@product.id}") %> </h3>
+
 <% cache("#{@product.id}-#{@product.updated_at.to_s(:number)}-#{@product.comments.count}") do %>
 
   <div class="container anchor" id="process"></div>

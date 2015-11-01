@@ -1,10 +1,12 @@
-<% cache("#{@comments.first.product.id}-#{@comments.total_entries}") do %>
-  <div class="product-reviews">
+<% if @comments.count > 0 %>
+  <% cache("#{@comments.first.product.id}-#{@comments.total_entries}") do %>
+   <div class="product-reviews">
     <% @comments.each do |comment| %>
         <%= render comment %>
     <% end %>
      <%= will_paginate @comments %>
-  </div>
-<% end %>
+   </div>
+ <% end %>
+<% end %>  
 
 

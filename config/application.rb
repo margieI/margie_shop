@@ -23,7 +23,7 @@ module Nameofapp
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
-    #config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 90.minutes }
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
 
     #config.cache_store = :redis_store, { :host => "localhost",
     #                                 :port => 6379,
